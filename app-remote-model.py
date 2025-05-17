@@ -8,9 +8,8 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 
-# 设置 DeepSeek API
-os.environ["OPENAI_API_KEY"] = "sk-71c364e42b4545ceba5e0b5b9f71df08"
-os.environ["OPENAI_API_BASE"] = "https://api.deepseek.com/v1"
+from dotenv import load_dotenv
+load_dotenv()
 
 # 1. 加载 PDF 文档
 pdf_path = "data/Stream-Processing-with-Apache-Flink.pdf"
