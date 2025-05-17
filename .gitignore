@@ -176,3 +176,4 @@ cython_debug/
 .idea
 venv
 faiss_index
+*.rml
